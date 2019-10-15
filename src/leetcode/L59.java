@@ -3,7 +3,7 @@ package leetcode;
 public class L59 {
 
 	public static void main(String[] args) {
-		Solution solution=new Solution();
+		L59 solution=new L59();
 		int[][] result=solution.generateMatrix(10);
 		print2DArray(result,"%-4d ");
 	}
@@ -16,11 +16,8 @@ public class L59 {
 			System.out.println();
 		}
 	}
-
-}
-
-class Solution {
-    public int[][] generateMatrix(int n) {
+	
+	public int[][] generateMatrix(int n) {
     	int[][] nums=new int[n][n];
         int step=0;
         int nextInt=0;
@@ -46,4 +43,7 @@ class Solution {
         }
     	return nums;
     }
+
 }
+
+
